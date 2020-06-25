@@ -1,0 +1,9 @@
+<div *ngFor = "let i of indecies">
+<div class="card animated slideInLeft">
+    <img src={{imageUrl[i]}}  style="width:100% ; height:300px">
+    <h1>{{title[i]}}</h1>
+    <p class="score">Score : {{score[i]}}</p>
+    <p>{{synopsis[i]}}</p>
+    <p><a href={{url[i]}} target="_blank">OPEN IN MAL</a></p>
+  </div>
+</div>

@@ -1,0 +1,34 @@
+.card {
+  position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 400px;
+    margin:10px;
+    text-align: center;
+    font-family: arial;
+    float:left;
+    height:600px;
+  }
+  
+  .score {
+    color: grey;
+    font-size: 22px;
+  }
+  
+  .card a {
+    position: absolute; 
+    bottom: 0; 
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    font-size: 18px;
+    right: 145px;
+    margin-top: 5px;
+  }
+  
+  .card a:hover {
+    opacity: 0.7;
+  }

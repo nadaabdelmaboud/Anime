@@ -1,0 +1,23 @@
+ <form class="animated slideInLeft">
+   <h1 class="animated bounceInDown" >Anime</h1>
+ <div><label>Genre :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label> 
+    <select [(ngModel)]="genre" [ngModelOptions]="{standalone: true}">
+       <option  *ngFor = "let i of genres" value={{i.value}} >{{i.name}}</option>
+    </select>
+ </div>
+ <div><label>Number of Episodes :</label> 
+   <input [(ngModel)]="ep" [ngModelOptions]="{standalone: true}"  type="number" value="0">
+ </div>
+ <div><label>Status :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label> 
+    <select  [(ngModel)]="status" [ngModelOptions]="{standalone: true}">
+        <option id="st1">completed</option>
+        <option id="st2">airing</option>
+     </select>
+  </div>
+  <div><label>Start Date :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label> 
+    <input [(ngModel)]="date" [ngModelOptions]="{standalone: true}" type="date" >
+  </div>
+    <button type="submit" (click)="search()" >GO</button>
+</form>
+
+
