@@ -1,5 +1,5 @@
 # Anime
-Angular-Express site recommends animes from MAL website using
+Angular-Express site recommends animes from MAL website using jikan-node api for animes' data
 
 ![intro](client/demo/demo.gif) 
 # Prerequistes installs :
